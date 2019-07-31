@@ -65,7 +65,7 @@ p users["Erik"][:lottery_numbers]
 # 5. Get the smallest of Erik's lottery numbers
 p users["Erik"][:lottery_numbers][2]
 # 6. Return an array of Avril's lottery numbers that are even
-p users["Avril"] [:lottery_numbers] ?
+p users["Avril"] [:lottery_numbers].each{|x| puts x if x%2 == 0
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 users["Erik"] [:lottery_numbers] << 7
 # 8. Change Erik's hometown to Edinburgh
